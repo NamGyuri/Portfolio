@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+body{
+    padding-top:130px;
+}
+.title-pro{
+    position:relative;
+    margin-bottom: 3rem;
+}
+.bar{
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    width:5rem;
+    height:3px;
+    background-color:#000;
+}
+.title-pro>h3{
+    font-family:"Gmarket_b";
+    padding-left:6rem;
+    margin:0px;
+}
+    .main_pro{
+        display:flex;
+        padding:0 6rem;
+        margin-bottom:12rem;
+    }
+    .main_pro>div>img{
+        width:100%;
+    }
+    .pro-text{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        margin-left:3rem;
+    }
+    .email{
+        margin-bottom:2rem;
+    }
+    .hi>p:last-child{
+        margin:0px;
+    }
+    .pro-project{
+        margin-bottom:1rem;
+    }
+    .serve_pro{
+        display:flex;
+        padding:0 6rem;
+        margin-bottom:1rem;
+    }
+
+
