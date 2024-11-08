@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body>
+    <!--header-->
+    <!--수정하지 마세요-->
+    <header>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link action" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../project-all.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../pro.html">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--<button class="top" type="button" onclick="windox.scrolltTo(0,0);">
+        <img src="img/top.png">
+    </button>-->
+    
+    
+    <div class="snm-img">
+        <img src="img/summer_night.png">
+    </div>
+    <section class="main-flex">
+        <div class="pj-ex">
+            <div class="pf">
+                <div class="pj-ab">
+                    <img src="img/d1/F1.png">
+                </div>
+                <div>
+                    <h1><strong>나유진</strong><br class="mw-n">&#40;Na Yu Jin&#41;</h1>
+                    <p>wlsdl3695@gmail.com</p>
+                </div>
+            </div>
+            <div class="p-ex">
+                <div>
+                    <p>리버크로우 / Rivercraw</p>
+                    <p>
+                    코로나19 사태가 겹치면서 한강 이용자 수는 <br class="dis-n">
+                    급등하고 있는 추세이며, 한강공원의 쓰레기 발생량은 <br class="dis-n">
+                    점점 늘고 있습니다. 이러한 사태를 해결하기 위해 <br class="dis-n">
+                    'Rivercraw' 앱을 제작하게 되었습니다. 'River Craw'는 <br class="dis-n">
+                    River+Clean River And World의 약자이자, <br class="dis-n">
+                    몸을 숙여 쓰레기를 수집하는 한강공원 시민들을 비유한 단어 <br class="dis-n">
+                    Crawler(크롤러)를 합친 단어입니다.<br class="dis-n">
+                    <br class="dis-n">
+                    &nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pj-dt">
+            <img src="img/d1/01.png">
+            <img src="img/d1/02.png">
+            <img src="img/d1/03.png">
+            <img src="img/d1/04.png">
+            <img src="img/d1/05.png">
+            <img src="img/d1/06.png">
+            <img src="img/d1/07.png">
+            <img src="img/d1/08.png">
+            <img src="img/d1/09.png">
+            <img src="img/d1/10.png">
+            <img src="img/d1/11.png">
+            <img src="img/d1/12.png">
+            <div class="ratio ratio-16x9">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/599915891?h=078ba57804" width="100%" height="auto" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--footer-->
+    <!--수정하지 마세요-->
+    <footer>
+        <img src="img/footer_img.png">
+        <p>Copyright &copy; 2021. Division of Multimedia Design, Inje University. All rights reserved.</p>
+    </footer>
+    
+    <script>
+	jQuery(document).ready(function($){
+        $(".all").click(function(){
+			$(".all").addClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".dc").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").addClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").addClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".mm").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").addClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").addClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".vi").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").addClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").addClass('df');
+		});
+        $(".dcons").click(function(){
+			$(".dcons").addClass('click');
+			$(".dcong").removeClass('click');
+		});
+        $(".dcong").click(function(){
+			$(".dcons").removeClass('click');
+			$(".dcong").addClass('click');
+		});
+        $(".motions").click(function(){
+			$(".motions").addClass('click');
+			$(".motiong").removeClass('click');
+		});
+        $(".motiong").click(function(){
+			$(".motions").removeClass('click');
+			$(".motiong").addClass('click');
+		});
+        $(".visuals").click(function(){
+			$(".visuals").addClass('click');
+			$(".visualg").removeClass('click');
+		});
+        $(".visualg").click(function(){
+			$(".visuals").removeClass('click');
+			$(".visualg").addClass('click');
+		});
+	});
+</script>
+    <!--수정하지 마세요. 세부카테고리 버튼을 클릭했을때 버튼의 색이 변하는 애니메이션입니다-->
+</body>
+</html>

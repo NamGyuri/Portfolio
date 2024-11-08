@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+</head>
+<body>
+    <!--header-->
+    <!--수정하지 마세요-->
+    <header id="header">
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link action" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="file:///C:/Users/foxst/Desktop/%EB%8C%80%ED%95%99%EA%B5%90/3%ED%95%99%EB%85%84%201%ED%95%99%EA%B8%B0/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%BD%98%ED%85%90%EC%B8%A0%EA%B8%B0%ED%9A%8D%20%EB%B0%8F%20%EB%94%94%EC%9E%90%EC%9D%B8/summer_night/Project-All.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../pro.html">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--<button class="top" type="button" onclick="windox.scrolltTo(0,0);">
+        <img src="img/top.png">
+    </button>-->
+
+
+    <div class="snm-img">
+        <img src="img/summer_night.png">
+    </div>
+    <section class="main-flex">
+        <div class="pj-ex">
+            <div class="pf">
+                <div class="pj-ab">
+                    <img src="img/p5.png">
+                </div>
+                <div>
+                    <h1><strong>최홍</strong><br class="mw-n">&#40;Choi Hong&#41;</h1>
+                    <p>coil48@icloud.com</p>
+                </div>
+            </div>
+            <div class="p-ex">
+                <div>
+                    <p>유니오스 / Unios</p>
+                    <p>
+                    계속되는 환경파괴와 인구증가로 인해 2021년부터 지구의 환경은 급격히 변화하기<br class="dis-n">
+                    시작하며 그로 인해 지구가 아닌 다른 장소에서 살아가기 위해<br class="dis-n">
+                    인간들은 태양계 내의 금성, 화성 등 다양한 행성을 개발하기 시작했고<br class="dis-n">
+                    2032년 화성개발을 목적으로 민간 우주기업 ‘유니오스’는 대규모 개발 장비들과 인원들을 화성으로 보내기 시작합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pj-dt">
+            <img src="img/detail06/detail1.png">
+            <div class="ratio ratio-16x9">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/594648097?h=5d4f9f5394" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <img src="img/detail06/detail2.jpg">
+            <img src="img/detail06/detail3.png">
+            <img src="img/detail06/detail4.jpg">
+            <img src="img/detail06/detail5.png">
+            <img src="img/detail06/detail6.jpg">
+            <img src="img/detail06/detail8.jpg">
+            <img src="img/detail06/detail9.png">
+            <img src="img/detail06/detail10.png">
+            <img src="img/detail06/detail11.png">
+            <img src="img/detail06/detail12.jpg">
+            <img src="img/detail06/detail13.jpg">
+            <img src="img/detail06/detail14.jpg">
+            <img src="img/detail06/detail15.png">
+            <img src="img/detail06/detail16.jpg">
+            <img src="img/detail06/detail17.png">
+            <img src="img/detail06/detail18.jpg">
+            <div class="ratio ratio-16x9">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/593750761?h=f70b2d25dc" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <!--수정하지 마세요-->
+    <footer>
+        <img src="img/footer_img.png">
+        <p>Copyright &copy; 2021. Division of Multimedia Design, Inje University. All rights reserved.</p>
+    </footer>
+
+    <script>
+	jQuery(document).ready(function($){
+        $(".all").click(function(){
+			$(".all").addClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".dc").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").addClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").addClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".mm").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").addClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").addClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".vi").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").addClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").addClass('df');
+		});
+        $(".dcons").click(function(){
+			$(".dcons").addClass('click');
+			$(".dcong").removeClass('click');
+		});
+        $(".dcong").click(function(){
+			$(".dcons").removeClass('click');
+			$(".dcong").addClass('click');
+		});
+        $(".motions").click(function(){
+			$(".motions").addClass('click');
+			$(".motiong").removeClass('click');
+		});
+        $(".motiong").click(function(){
+			$(".motions").removeClass('click');
+			$(".motiong").addClass('click');
+		});
+        $(".visuals").click(function(){
+			$(".visuals").addClass('click');
+			$(".visualg").removeClass('click');
+		});
+        $(".visualg").click(function(){
+			$(".visuals").removeClass('click');
+			$(".visualg").addClass('click');
+		});
+	});
+</script>
+    <!--수정하지 마세요. 세부카테고리 버튼을 클릭했을때 버튼의 색이 변하는 애니메이션입니다-->
+</body>
+</html>

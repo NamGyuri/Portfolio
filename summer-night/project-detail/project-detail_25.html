@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+</head>
+<body>
+    <!--header-->
+    <!--수정하지 마세요-->
+    <header>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link action" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../project-all.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../pro.html">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--<button class="top" type="button" onclick="windox.scrolltTo(0,0);">
+        <img src="img/top.png">
+    </button>-->
+    
+    
+    <div class="snm-img">
+        <img src="img/summer_night.png">
+    </div>
+    <section class="main-flex">
+        <div class="pj-ex">
+            <div class="pf">
+                <div class="pj-ab">
+                    <img src="img/d7/F7.png">
+                </div>
+                <div>
+                    <h1><strong>신진연</strong><br class="mw-n">&#40;Shin Jin Yeon&#41;</h1>
+                    <p>tdgh5912@naver.com</p>
+                </div>
+            </div>
+            <div class="p-ex">
+                <div>
+                    <p>환경을 생각하는 온라인 패션 스토어 시스템 / ECO-friendly online fashion store system</p>
+                    <p>
+                    무엇이든 빠르고 새로운 걸 추구하는 현대인들은 <br class="dis-n">
+                    패스트패션의 시대에 살고 있습니다. 패스트패션으로 버려진 옷 <br class="dis-n">
+                    한 벌 한 벌이 모여 지구를 파괴한다는데, <br class="dis-n">
+                    환경을 보호하면서 옷을 입을 수는 없을까요? 어제보다 <br class="dis-n">
+                    더 나은 오늘, 오늘보다 더 나은 내일을 위한 작은 아이디어. <br class="dis-n">
+                    환경을 생각하는 온라인 패션 스토어 시스템입니다.<br class="dis-n">
+                    <br class="dis-n">
+                    <br class="dis-n">
+                    &nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pj-dt">
+            <img src="img/d7/00.png">
+        </div>
+    </section>
+    
+    
+    <!--footer-->
+    <!--수정하지 마세요-->
+    <footer>
+        <img src="img/footer_img.png">
+        <p>Copyright &copy; 2021. Division of Multimedia Design, Inje University. All rights reserved.</p>
+    </footer>
+    
+    <script>
+	jQuery(document).ready(function($){
+        $(".all").click(function(){
+			$(".all").addClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".dc").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").addClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").addClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".mm").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").addClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").addClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".vi").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").addClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").addClass('df');
+		});
+        $(".dcons").click(function(){
+			$(".dcons").addClass('click');
+			$(".dcong").removeClass('click');
+		});
+        $(".dcong").click(function(){
+			$(".dcons").removeClass('click');
+			$(".dcong").addClass('click');
+		});
+        $(".motions").click(function(){
+			$(".motions").addClass('click');
+			$(".motiong").removeClass('click');
+		});
+        $(".motiong").click(function(){
+			$(".motions").removeClass('click');
+			$(".motiong").addClass('click');
+		});
+        $(".visuals").click(function(){
+			$(".visuals").addClass('click');
+			$(".visualg").removeClass('click');
+		});
+        $(".visualg").click(function(){
+			$(".visuals").removeClass('click');
+			$(".visualg").addClass('click');
+		});
+	});
+</script>
+    <!--수정하지 마세요. 세부카테고리 버튼을 클릭했을때 버튼의 색이 변하는 애니메이션입니다-->
+</body>
+</html>

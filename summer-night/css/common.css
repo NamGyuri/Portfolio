@@ -1,0 +1,269 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* { 
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    box-sizing:border-box;
+}
+body{
+    padding-top:80px;/*header가 fixed되면서 가려지는 부분을 보이게하기 위해 padding으로 header의 높이만큼 밀어냄*/
+}
+
+/*header*/
+/*수정하지 마세요*/
+header{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:80px;
+    padding-right:8vw;
+    background-color:#fff;
+    z-index:100;
+}
+.action{
+    font-size:24px;
+    font-weight:bold;
+    padding:20px 1.5rem;
+    color:#041D31;
+    text-transform:uppercase;
+}
+.action:hover{
+    color:#7C95F0;
+}
+.action:after{
+    display:block;
+    content:'';
+    border-bottom:solid 3px #7C95F0;
+    transform:scaleX(0);
+    transition:transform 250ms ease-in-out;
+    transform-origin:0% 50%;
+}
+.action:hover:after{
+    transform:scaleX(1);
+}
+.justify-content-end>li:last-child>a{
+    padding-right:0;
+}
+.active{
+    color:#7C95F0;
+    font-size:24px;
+    font-weight:bold;
+    padding:20px 1.5rem;
+    text-transform:uppercase;
+}
+.active:hover{
+    color:#7C95F0;
+}
+
+
+/*container*/
+/*수정하지 마세요*/
+.title{
+    width:100%;
+    height:auto;
+    background-image:url(../img/summer_night.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    padding:10%;
+}
+.title>div{
+    position:relative;
+    padding-left:3vw;
+}
+.title img{
+    position:absolute;
+    top:-30%;
+    left:0px;
+    width:2.3vw;
+    height:auto;
+}
+.title h1{
+    font-weight:bold;
+    font-size:3vw;
+    margin:0px;
+    color:#fff;
+}
+@media (max-width:800px){
+    .title>div{
+        padding-left:1.8rem;
+    }
+    .title img{
+        width:1.3rem;
+    }
+    .title h1{
+        font-size:24px;
+    }
+}
+
+/*nav*/
+/*세부 카테고리*/
+/*About, Profile은 지우고 사용하세요*/
+.catebox{
+    padding:2.5rem 0px;
+}
+.over-wrap{
+    overflow:scroll;
+    overflow:auto;
+    white-space:nowrap;
+}
+.over-wrap::-webkit-scrollbar{
+    display:none;
+}
+.nav-br{
+    display:none;
+}
+.catebox a{
+    border-radius:100px;
+    margin-right:.8rem;
+    font-size:18px;
+}
+.basic{
+    color:#041D31;
+    /*background-color:#ddd;*/
+}
+.basic:hover{
+    box-shadow: 0 0 0 1px #F99505 inset;
+    color:#F99505;
+    transition:.15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.click{
+    color:#fff;
+    font-weight:bold;
+    background-color:#F99505;
+}
+.click:visited{
+    color:#fff;
+}
+.click:hover{
+    color:#fff;
+}
+.dcon, .motion, .visual{
+    display:none;
+    margin-top:1rem;
+}
+.df{
+    display:flex;
+}
+
+/*text 예시*/
+/*text 예시입니다 지우고 사용하세요*/
+.ex{
+    width:100%;
+    height:1000px;
+    color:#041D31;
+}
+.n1{
+    font-weight:100;
+}
+.n2{
+    font-weight:200;
+}
+.n3{
+    font-weight:300;
+}
+.n4{
+    font-weight:400;
+}
+.n5{
+    font-weight:500;
+}
+.n6{
+    font-weight:600;
+}
+.n7{
+    font-weight:700;
+}
+.n8{
+    font-weight:800;
+}
+.n9{
+    font-weight:900;
+}
+.nl{
+    font-weight:lighter;
+}
+.nn{
+    font-weight:normal;
+}
+.nb{
+    font-weight:bold;
+}
+
+/*footer*/
+/*수정하지 마세요*/
+footer{
+    padding:2rem 0px;
+    text-align:center;
+}
+footer>img{
+    margin-bottom:20px;
+    max-width:23vw;
+    height:auto;
+    min-width:220px;
+}
+footer>p{
+    font-size:14px;
+    margin:0px;
+}
+
+
+@media (max-width:1200px){
+    header{
+        padding-right:6vw;
+    }
+    
+}
+@media (max-width:580px){
+    header{
+        padding-right:0;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+    }
+    .nav{
+        max-height:100%;
+        flex-wrap:nowrap;
+        align-items:center;
+        justify-content:space-around!important;
+    }
+    .over-wrap{
+        padding:0 2.5vw;
+        justify-content:flex-start!important;
+    }
+    .dcon, .motion, .visual{
+        justify-content:center!important;
+    }
+    .action, .active{
+        font-size:4.2vw;
+        padding:0 1rem;
+    }
+    .nav>li{
+        height:100%;
+    }
+    .nav>li:last-child>a{
+        padding-right:1rem;
+    }
+    .visuals{
+        text-align:center;
+    }
+    .nav-br{
+        display:block;
+    }
+    .catebox a{
+        border-radius:100px;
+        margin-right:.8rem;
+        font-size:15px;
+    }
+    .over-wrap a{
+        font-size:18px;
+    }
+}
+
+
+
+
+
+
+
+

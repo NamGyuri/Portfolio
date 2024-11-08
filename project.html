@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header menu -->
+    <header class="header">
+        <div class="menu menu_home">
+            <a class="home ex" href="index.html">HOME</a>
+        </div>
+        <div class="menu menu_about">
+            <a class="about ex" href="about_sample.html">ABOUT</a>
+        </div>
+        <div class="menu menu_project">
+            <a class="project ex" href="project.html">PROJECT</a>
+        </div>
+        <!-- <div class="menu menu_contact">
+            <a class="contact ex" href="#">CONTACT</a>
+        </div> -->
+        <div class="fix_ex1"></div>
+        <div class="fix_ex2"></div>
+        <div class="fix_ex3"></div>
+        <div class="fix_ex4"></div>
+    </header>
+
+    <section class="main">
+        <h1 class="ui">UX<span>/</span>UI</h1>
+        <div class="circle">
+            <div class="in_circle">
+                <div class="compass_text">
+                    <div class="top">
+                        <div class="line top_line"></div>
+                        <button onclick="f_click()" class="turn_ui">UI</button>
+                    </div>
+                    <div class="left">
+                        <div class="line left_line">
+                            <span>W</span>
+                        </div>
+                        <div class="line left_line_top"></div>
+                        <div class="line left_line_bottom"></div>
+                    </div>
+                    <div class="right">
+                        <div class="line right_line">
+                            <span>E</span>
+                        </div>
+                        <div class="line right_line_top"></div>
+                        <div class="line right_line_bottom"></div>
+                    </div>
+                    <div class="bottom">
+                        <button onclick="turn()" class="turn_ui">WEB</button>
+                        <div class="line bottom_line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="compass_circle" id="rt">
+                <div class="compass_arrow_top"></div>
+                <div class="compass_arrow_bottom"></div>
+            </div>
+            <button onclick="comclick()" class="design in_text">DESIGN</button>
+            <button onclick="comclick2()" class="off puble in_text">PUBLISHING</button>
+        </div>
+        <h1 class="opa">WEB</h1>
+    </section>
+
+    <div class="contents ui_title">
+        <h1>CONTENTS</h1>
+        <ul>
+            <h5>UI/UX DESIGN</h5>
+            <li><span>01</span>파킨슨앱</li>
+            <li><span>02</span>AVATAJ</li>
+            <li><span>03</span>PREFER</li>
+            <li><span>04</span>포럽 (For the brain)</li>
+            <li><span>05</span>무신사 리뉴얼</li>
+        </ul>
+    </div>
+
+    <div class="contents web_title">
+        <h1>CONTENTS</h1>
+        <ul>
+            <h5>WEB PUBLISHING</h5>
+            <li><span>01</span>여름 밤</li>
+        </ul>
+    </div>
+
+    <section class="project_ui">
+        <div class="project1">
+            <img src="AVATAJ_표지.jpg" class="pr1">
+            <!-- <div class="detial view1">
+                <span>아래 내용은 디자인 관련 부분만 함축하여 첨부하였습니다. 상세 정보를 원하신다면 Detail Vew 버튼을 클릭해주세요.</span>
+                <button>Detail View</button>
+            </div> -->
+            <img src="avataj1.jpg" class="pr2">
+        </div>
+        <div class="project2">
+            <img src="PREFER_cover.jpg" class="pr1">
+            <!-- <div class="detial view2">
+                <span>아래 내용은 디자인 관련 부분만 함축하여 첨부하였습니다. 상세 정보를 원하신다면 Detail Vew 버튼을 클릭해주세요.</span>
+                <button>Detail View</button>
+            </div> -->
+            <img src="prefer.jpg" class="pr2">
+        </div>
+        <div class="project3">
+            <img src="Parkinson_cover.jpg" class="pr1">
+            <!-- <div class="detial view3">
+                <span>아래 내용은 디자인 관련 부분만 함축하여 첨부하였습니다. 상세 정보를 원하신다면 Detail Vew 버튼을 클릭해주세요.</span>
+                <button>Detail View</button>
+            </div> -->
+            <img src="parkinson.jpg" class="pr2">
+        </div>
+        <div class="project4">
+            <img src="forup_cover.jpg" class="pr1">
+            <!-- <div class="detial view4">
+                <span>아래 내용은 디자인 관련 부분만 함축하여 첨부하였습니다. 상세 정보를 원하신다면 Detail Vew 버튼을 클릭해주세요.</span>
+                <button>Detail View</button>
+            </div> -->
+            <img src="forup.jpg" class="pr2">
+        </div>
+        <div class="project5">
+            <img src="MUSINSA_cover.jpg" class="pr1">
+            <!-- <div class="detial view5">
+                <span>아래 내용은 디자인 관련 부분만 함축하여 첨부하였습니다. 상세 정보를 원하신다면 Detail Vew 버튼을 클릭해주세요.</span>
+                <button>Detail View</button>
+            </div> -->
+            <img src="musinsa.jpg" class="pr2">
+        </div>
+    </section>
+
+    <section class="project_web off">
+        <div class="proweb1">
+            <img src="summer_night_cover.jpg" class="prweb">
+            <img src="summer_night.jpg" class="prweb">
+            <div class="detial view6">
+                <span>상세 정보를 원하신다면 Website 버튼을 클릭해주세요.</span>
+                <button type="button" id="summer_night" onclick="window.open('summer-night/index.html')">Website</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="name">NamGyuRi</div>
+        <div class="text">
+            <p>본 사이트는 포트폴리오 용도로 제작된 가상의 사이트입니다. 일부 콘텐츠의 저작권은 해당사에 있음을 밝힙니다.</p>
+            <p>Design&Publishing by Nam Gyu Ri</p>
+            <p>Copyright2022.NamGyuri All pictures cannot be copied without permission.</p>
+        </div>
+        <div class="link">
+            <a href="https://www.instagram.com/gyuri_886/">
+                <img alt="instagram logo" src="Instagram_Logo.png">
+            </a>
+            <a href="https://github.com/NamGyuri">
+                <img alt="github logo" src="GitHub_Logo.png">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var turn=function(){
+            $("#rt").addClass("rotate");
+            $(".puble").addClass("on");
+            $(".puble").removeClass("off");
+            $(".design").removeClass("on");
+            $(".design").addClass("off");
+
+            $(".circle").addClass("m_border");
+            $(".in_circle").addClass("backcolor_off");
+            $(".compass_circle").addClass("backcolor_on");
+            $(".compass_arrow_top").addClass("bordercolor_on");
+            $(".compass_arrow_bottom").addClass("bordercolor_off");
+
+            $(".compass_text").addClass("textcolor_on");
+            $(".turn_ui").addClass("textcolor_on");
+            $(".line").addClass("backcolor_on");
+
+            $(".main").addClass("backcolor_on");
+
+            $(".ui").addClass("ui_off");
+            $(".opa").addClass("textcolor_off");
+
+            $(".project_ui").addClass("off");
+            $(".project_ui").removeClass("on");
+
+            $(".ui_title").addClass("off");
+            $(".ui_title").removeClass("title_on");
+
+            $(".web_title").addClass("title_on");
+            $(".web_title").removeClass("off");
+            
+            $(".project_web").addClass("on");
+            $(".project_web").removeClass("off");
+        };
+
+        var f_click=function(){
+            $("#rt").removeClass("rotate");
+            $(".puble").removeClass("on");
+            $(".puble").addClass("off");
+            $(".design").addClass("on");
+            $(".design").removeClass("off");
+
+            $(".circle").removeClass("m_border");
+            $(".in_circle").removeClass("backcolor_off");
+            $(".compass_circle").removeClass("backcolor_on");
+            $(".compass_arrow_top").removeClass("bordercolor_on");
+            $(".compass_arrow_bottom").removeClass("bordercolor_off");
+
+            $(".compass_text").removeClass("textcolor_on");
+            $(".turn_ui").removeClass("textcolor_on");
+            $(".line").removeClass("backcolor_on");
+
+            $(".main").removeClass("backcolor_on");
+            
+            $(".ui").removeClass("ui_off");
+            $(".opa").removeClass("textcolor_off");
+
+            $(".project_ui").addClass("on");
+            $(".project_ui").removeClass("off");
+
+            $(".ui_title").addClass("title_on");
+            $(".ui_title").removeClass("off");
+
+            $(".web_title").addClass("off");
+            $(".web_title").removeClass("title_on");
+            
+            $(".project_web").addClass("off");
+            $(".project_web").removeClass("on");
+        };
+
+        var comclick=function(){
+            $("#rt").addClass("rotate");
+            $(".puble").addClass("on");
+            $(".puble").removeClass("off");
+            $(".design").removeClass("on");
+            $(".design").addClass("off");
+
+            $(".circle").addClass("m_border");
+            $(".in_circle").addClass("backcolor_off");
+            $(".compass_circle").addClass("backcolor_on");
+            $(".compass_arrow_top").addClass("bordercolor_on");
+            $(".compass_arrow_bottom").addClass("bordercolor_off");
+
+            $(".compass_text").addClass("textcolor_on");
+            $(".turn_ui").addClass("textcolor_on");
+            $(".line").addClass("backcolor_on");
+
+            $(".main").addClass("backcolor_on");
+
+            $(".ui").addClass("ui_off");
+            $(".opa").addClass("textcolor_off");
+            
+            $(".project_ui").addClass("off");
+            $(".project_ui").removeClass("on");
+            
+            $(".ui_title").addClass("off");
+            $(".ui_title").removeClass("title_on");
+
+            $(".web_title").addClass("title_on");
+            $(".web_title").removeClass("off");
+            
+            $(".project_web").addClass("on");
+            $(".project_web").removeClass("off");
+        };
+        
+        var comclick2=function(){
+            $("#rt").removeClass("rotate");
+            $(".puble").removeClass("on");
+            $(".puble").addClass("off");
+            $(".design").addClass("on");
+            $(".design").removeClass("off");
+
+            $(".circle").removeClass("m_border");
+            $(".in_circle").removeClass("backcolor_off");
+            $(".compass_circle").removeClass("backcolor_on");
+            $(".compass_arrow_top").removeClass("bordercolor_on");
+            $(".compass_arrow_bottom").removeClass("bordercolor_off");
+
+            $(".compass_text").removeClass("textcolor_on");
+            $(".turn_ui").removeClass("textcolor_on");
+            $(".line").removeClass("backcolor_on");
+
+            $(".main").removeClass("backcolor_on");
+            
+            $(".ui").removeClass("ui_off");
+            $(".opa").removeClass("textcolor_off");
+            
+            $(".project_ui").addClass("on");
+            $(".project_ui").removeClass("off");
+
+            $(".ui_title").addClass("title_on");
+            $(".ui_title").removeClass("off");
+
+            $(".web_title").addClass("off");
+            $(".web_title").removeClass("title_on");
+            
+            $(".project_web").addClass("off");
+            $(".project_web").removeClass("on");
+        };
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

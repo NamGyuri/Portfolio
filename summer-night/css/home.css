@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+body{
+    height:100%;
+    background-image:url(../img/summer_night_home.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:#fff;
+}
+
+/*header*/
+header{
+    background-color:rgba(0,0,0,0);
+}
+.action{
+    color:#fff;
+}
+.action:visited{
+    color:#fff;
+}
+.action:hover{
+    color:#7C95F0;
+}
+
+/*container*/
+
+/*section1-title*/
+.home_summernight{
+    padding:110px 6rem;
+}
+.home_summernight>div{
+    position:relative;
+    margin-bottom:25px;
+}
+.home_summernight img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    transform:translateX(-110%) translateY(-60%);
+    width:auto;
+    height:2rem;
+}
+.t_flex{
+    display:flex;
+    align-items:center;
+}
+.bar{
+    width:9rem;
+    height:3px;
+    margin-left:25px;
+    margin-right:5px;
+    background-color:#fff;
+}
+
+/*section2-video*/
+.thema, .poster{
+    padding:110px 0px;
+}
+.ratio{
+    max-width:100%;
+    height:auto;
+}
+.v_flex{
+    display:flex;
+    align-items:center;
+    margin-bottom:50px;
+}
+.v_bar{
+    width:5rem;
+    height:3px;
+    margin-right:1rem;
+    background-color:#fff;
+}
+.v_flex>h4{
+    margin:0px;
+}
+.v_center{
+    text-align:center;
+    padding:50px 6rem;
+}
+
+/*section3-thema*/
+.tp{
+    padding:70px 6rem 0px;
+}
+.tp>img{
+    margin-bottom:20px;
+    width:2rem;
+}
+.tp>p{
+    margin-top:50px;
+}
+
+/*section4-poster*/
+.p_center{
+    text-align:center;
+    padding:50px 0px;
+}
+
+/*section5-credit*/
+.c_title{
+    margin-bottom:80px;
+}
+.credit .v_flex{
+    margin:0px;
+}
+.c_title>p{
+    padding-left:6rem;
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
+.com{
+    padding:0px 3rem 0px 6rem;
+    margin-bottom:60px;
+}
+.committee{
+    margin-bottom:10rem;
+}
+.com>img{
+    width:2rem;
+    margin-bottom:10px;
+}
+.c_flex{
+    display:flex;
+}
+.c_flex>h5{
+    flex:none;
+    width:7rem;
+    font-size:18px;
+    margin:0px;
+    margin-right:5rem;
+}
+.wrap{
+    display:flex;
+    flex-wrap:wrap;
+}
+.w-col{
+    text-align:center;
+    display:inline-block;
+    width:8rem;
+    margin-bottom:10px;
+}
+
+/*footer*/
+footer>p{
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

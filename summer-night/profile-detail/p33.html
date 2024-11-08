@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>profile-detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
+    <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pro2.css">
+</head>
+<body>
+    <!--header-->
+    <!--수정하지 마세요-->
+    <header>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link action" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../project-all.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link action" href="../pro.html">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="title-pro">
+        <div class="bar"></div>
+        <h3>Profile</h3>
+        <div class="row">
+            <div class="col-6 col-md-5 offset-md-1  offset-lg-0 col-lg-4">
+            </div>
+        </div>
+    </div>
+    <section class="main_pro">
+        <div>
+            <img src="../img/p33.png" alt="MyImage">
+        </div>
+        <div class="pro-text">
+            <div class="profile-name">
+                <h3>이예림 / Lee Ye Rim</h3>
+            </div>
+            <div class="email">
+                <h6>yerim0930@naver.com</h6>
+            </div>
+            <div class="hi">
+                <p>안녕하세요. 환경 보호 실천 앱 디자인, 나르준크래프트 개발자 이예림입니다.</p>
+
+                <p>잘 할 수 있을까 걱정하며 시작하던 캡스톤이었는데 어느덧 마무리가 되어 졸업전시까지 할 수 있었습니다.</p>
+                    
+                <p>1년간 함께해준 우리 팀 정말 감사드리고 여기까지 올 수 있도록 4년간 많은 도움을 주신 분들께 감사드립니다.</p>
+            </div>
+        </div>
+    </section>
+    <div class="title-pro">
+        <div class="bar"></div>
+        <h3>Project</h3>
+        <div class="row">
+            <div class="col-6 col-md-5 offset-md-1  offset-lg-0 col-lg-4">
+            </div>
+        </div>
+    </div>
+    <section class="serve_pro">
+        <div>
+            <img src="../img/vs10.png" alt="MyImage">
+        </div>
+        <div>
+            <img src="../img/vi11.png" alt="MyImage">
+        </div>
+    </section>
+
+    <!--footer-->
+    <!--수정하지 마세요-->
+    <footer>
+        <img src="../img/footer_img.png">
+        <p>Copyright &copy; 2021. Division of Multimedia Design, Inje University. All rights reserved.</p>
+    </footer>
+    
+    <script>
+	jQuery(document).ready(function($){
+        $(".all").click(function(){
+			$(".all").addClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".dc").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").addClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").addClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".mm").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").addClass('click');
+			$(".vi").removeClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").addClass('df');
+			$(".visual").removeClass('df');
+		});
+        $(".vi").click(function(){
+			$(".all").removeClass('click');
+			$(".dc").removeClass('click');
+			$(".mm").removeClass('click');
+			$(".vi").addClass('click');
+			$(".dcon").removeClass('df');
+			$(".motion").removeClass('df');
+			$(".visual").addClass('df');
+		});
+        $(".dcons").click(function(){
+			$(".dcons").addClass('click');
+			$(".dcong").removeClass('click');
+		});
+        $(".dcong").click(function(){
+			$(".dcons").removeClass('click');
+			$(".dcong").addClass('click');
+		});
+        $(".motions").click(function(){
+			$(".motions").addClass('click');
+			$(".motiong").removeClass('click');
+		});
+        $(".motiong").click(function(){
+			$(".motions").removeClass('click');
+			$(".motiong").addClass('click');
+		});
+        $(".visuals").click(function(){
+			$(".visuals").addClass('click');
+			$(".visualg").removeClass('click');
+		});
+        $(".visualg").click(function(){
+			$(".visuals").removeClass('click');
+			$(".visualg").addClass('click');
+		});
+	});
+    </script>
+    <!--수정하지 마세요. 세부카테고리 버튼을 클릭했을때 버튼의 색이 변하는 애니메이션입니다-->
+</body>
+</html>

@@ -1,0 +1,69 @@
+@charset "utf-8";
+*{
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+ /*-ms-overflow-style: none;*/
+ }
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 900px){
+    .liga, .exp{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:auto;
+    }
+    .stud>div, .exp>div{
+        padding-bottom:15px;
+    }
+    .exp>div:last-child{
+        padding:0px;
+    }
+}
+
+.flex_col{
+    display:flex;
+}
+.ms_video{
+    width:80%;
+    margin-top:100px;
+}
+.scroll{
+    width:80%;
+    height:200px;
+    border-top:30px solid #fff;
+    border-bottom:30px solid #fff;
+    border-left:40px solid #fff;
+    border-right:40px solid #fff;
+    box-shadow:0 0 0 1px #000;
+    box-sizing:border-box;
+    margin-top:50px;
+    overflow-y:scroll;
+}
+.liga{
+    display:flex;
+    margin-bottom:40px;
+}
+.liga:last-child{
+    margin-bottom:0px;
+}
+.stud{
+    display:flex;
+}
+.exp{
+    display:flex;
+    margin-left:auto;
+}
+.ptitle{
+    margin-left:20px;
+}
+
+
+
+

@@ -1,0 +1,273 @@
+
+body{
+    height:100vh;
+    background-color: #2A9BF4;
+    -ms-overflow-style: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.t_coding{
+    position:relative;
+    animation: fadeout 1s 1.8s ease-out forwards;
+}
+@keyframes fadeout{
+    100%{
+        opacity: 0;
+    }
+}
+.t_coding>h1{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    line-height:100vh;
+    color:transparent;
+    font-family: 'Jua', sans-serif;
+    font-size: 130px;
+    text-shadow: -4px -4px 18px rgba(42, 155, 244, 1), 0 0 0 rgba(255,255,255,0.35), 0 0 0 #2A9BF4, 15px 20px 20px rgba(0,0,0,0.08), 10px 10px 10px rgba(0,0,0,0.08), -5px -5px 5px #2A9BF4;
+}
+
+.t_design{
+    position:relative;
+    opacity: 0;
+    animation:fadein 3s 2.5s ease-out backwards;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.t_design>h1{
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    line-height:100vh;
+    color:transparent;
+    font-family: 'Jua', sans-serif;
+    font-size: 130px;
+    text-shadow: -4px -4px 18px rgba(42, 155, 244, 1), 0 0 0 rgba(255,255,255,0.35), 0 0 0 #2A9BF4, 15px 20px 20px rgba(0,0,0,0.08), 10px 10px 10px rgba(0,0,0,0.08), -5px -5px 5px #2A9BF4;
+}
+
+.drop-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:430px;
+    height:120px;
+}
+.text-drop{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.c-drop{
+    top:16px;
+    left:17px;
+    width:8px;
+    height:8px;
+}
+.c-drop2{
+    top:26px;
+    left:23px;
+    width:5px;
+    height:5px;
+}
+
+.o-drop{
+    top:16px;
+    left:92px;
+    width:8px;
+    height:8px;
+}
+.o-drop2{
+    top:26px;
+    left:97px;
+    width:5px;
+    height:5px;
+}
+
+.d-drop{
+    top:16px;
+    left:164px;
+    width:8px;
+    height:8px;
+}
+.d-drop2{
+    top:26px;
+    left:172px;
+    width:5px;
+    height:5px;
+}
+
+.i-drop{
+    top:16px;
+    right:175px;
+    width:8px;
+    height:8px;
+}
+.i-drop2{
+    top:26px;
+    right:170px;
+    width:5px;
+    height:5px;
+}
+
+.n-drop{
+    top:16px;
+    right:140px;
+    width:8px;
+    height:8px;
+}
+.n-drop2{
+    top:26px;
+    right:136px;
+    width:5px;
+    height:5px;
+}
+
+.g-drop{
+    top:16px;
+    right:50px;
+    width:8px;
+    height:8px;
+}
+.g-drop2{
+    top:26px;
+    right:47px;
+    width:5px;
+    height:5px;
+}
+
+.d-drop1{
+    top:16px;
+    left:10px;
+    width:8px;
+    height:8px;
+}
+.d-drop1-2{
+    top:26px;
+    left:17px;
+    width:5px;
+    height:5px;
+}
+
+.e-drop1{
+    top:16px;
+    left:90px;
+    width:8px;
+    height:8px;
+}
+.e-drop1-2{
+    top:26px;
+    left:97px;
+    width:5px;
+    height:5px;
+}
+
+.s-drop1{
+    top:16px;
+    left:164px;
+    width:8px;
+    height:8px;
+}
+.s-drop1-2{
+    top:26px;
+    left:170px;
+    width:5px;
+    height:5px;
+}
+
+.i-drop1{
+    top:16px;
+    right:179px;
+    width:8px;
+    height:8px;
+}
+.i-drop1-2{
+    top:26px;
+    right:174px;
+    width:5px;
+    height:5px;
+}
+
+.g-drop1{
+    top:16px;
+    right:136px;
+    width:8px;
+    height:8px;
+}
+.g-drop1-2{
+    top:26px;
+    right:133px;
+    width:5px;
+    height:5px;
+}
+
+.n-drop1{
+    top:16px;
+    right:65px;
+    width:8px;
+    height:8px;
+}
+.n-drop1-2{
+    top:26px;
+    right:60px;
+    width:5px;
+    height:5px;
+}
+.image_container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+    animation:imgview 1s 4s ease-out forwards;
+}
+@keyframes imgview{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.target{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity:0;
+    animation:imgshow 1s 5.5s ease-out forwards;
+}
+@keyframes imgshow{
+    100%{
+        opacity: 1;
+    }
+}
+.target>img{
+    width:400px;
+    height:400px;
+}
+  
+.target:after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    transform: rotate(45deg);
+    width: 0px; height: 0px;
+}

@@ -1,0 +1,194 @@
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+body, h1, h2, h3, h4, h5, h6, input, textarea, select, span, button {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    -ms-overflow-style: none;
+}   /* 스크롤 없애기 */
+::-webkit-scrollbar{
+    display: none;
+}   /* 스크롤 없애기 */
+a{
+    text-decoration:none;
+}
+
+
+header{
+    font-size:20px;
+    color:#053C70;
+    transition: all 0.3s ease-in-out;
+}
+.ex{
+    color:#053C70;
+    transition: all 0.3s ease-in-out;
+}
+.menu{
+    position:fixed;
+    z-index:9999;
+}
+.menu_home{
+    top:30px;
+    left:40px;
+    transition:top 0.2s ease-in-out;
+}
+.menu_home::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#053C70;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.menu_home:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* home 부분의 하얀색 언더바 */
+
+.menu_about{
+    top:35px;
+    right:35px;
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    letter-spacing:-10px;
+    transition:right 0.2s ease-in-out;
+}
+.menu_about::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    transform: scaleY(0);
+    width: 2px;
+    top:6px;
+    left: 0;
+    background-color:#053C70;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+.menu_about:hover::after{
+    transform: scaleY(1);
+    transform-origin: top left;
+}
+/* about 부분의 하얀색 언더바 */
+
+.menu_project{
+    bottom:30px;
+    right:40px;
+    transition:bottom 0.2s ease-in-out;
+}
+.menu_project::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height:2px;
+    top:0;
+    left:0;
+    background-color: #053C70;
+    transform-origin: top left;
+    transition: transform 0.25s ease-out;
+}
+.menu_project:hover::after{
+    transform: scaleX(1);
+    transform-origin: top right;
+}
+/* project 부분의 하얀색 언더바 */
+
+.menu_contact{
+    bottom:36px;
+    left:34px;
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    letter-spacing:-10px;
+    transition:left 0.2s ease-in-out;
+}
+.menu_contact::after{
+    content:'';
+    position:absolute;
+    height:100%;
+    transform: scaleY(0);
+    width:2px;
+    bottom:-6px;
+    right:0;
+    background-color: #053C70;
+    transform-origin: top right;
+    transition: transform 0.25s ease-out;
+}
+.menu_contact:hover::after{
+    transform: scaleY(1);
+    transform-origin: bottom right;
+}
+/* contact 부분의 하얀색 언더바 */
+/* header menu */
+
+footer{
+    position:relative;
+    height:120px;
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    background-color:#2A9BF4;
+}
+footer>div:nth-child(2){
+    flex:4;
+}
+footer>div{
+    flex:1;
+    margin:auto 0;
+}
+footer p{
+    font-size:14px;
+}
+footer>div:nth-child(3){
+    display:flex;
+    justify-content:center;
+}
+footer a{
+    height:45px;
+    margin-right:7px;
+}
+footer a:last-child{
+    margin:0;
+}
+footer img{
+    width:45px;
+    height:45px;
+}
+/* footer */
+
+
+/* scroll */
+
+.nav-up{
+    top:-50px;
+}
+.nav-right{
+    right:-50px;
+}
+.nav-bottom{
+    bottom:-50px;
+}
+.nav-left{
+    left:-50px;
+}
